@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <welcome-file-list>
+        <welcome-file>table.html</welcome-file>
+    </welcome-file-list>
+
+
+    <servlet>
+        <servlet-name>getData</servlet-name>
+        <servlet-class>com.xzx.dic.servlet.DataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getData</servlet-name>
+        <url-pattern>/getData</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteData</servlet-name>
+        <servlet-class>com.xzx.dic.servlet.DeleteDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteData</servlet-name>
+        <url-pattern>/deleteData</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>addData</servlet-name>
+        <servlet-class>com.xzx.dic.servlet.AddDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addData</servlet-name>
+        <url-pattern>/addData</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateData</servlet-name>
+        <servlet-class>com.xzx.dic.servlet.UpdateDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateData</servlet-name>
+        <url-pattern>/updateData</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sortData</servlet-name>
+        <servlet-class>com.xzx.dic.servlet.SortDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sortData</servlet-name>
+        <url-pattern>/sortData</url-pattern>
+    </servlet-mapping>
+</web-app>
